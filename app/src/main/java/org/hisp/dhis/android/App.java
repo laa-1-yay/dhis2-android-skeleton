@@ -23,8 +23,6 @@ public final class App extends Application {
     @Override
     protected void attachBaseContext(Context baseContext) {
         super.attachBaseContext(baseContext);
-
-        // TODO we should reduce amount of methods
         MultiDex.install(this);
     }
 }
