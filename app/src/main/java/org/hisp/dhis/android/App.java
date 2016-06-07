@@ -4,7 +4,7 @@ import android.app.Application;
 
 import org.hisp.dhis.client.sdk.ui.bindings.commons.Inject;
 import org.hisp.dhis.client.sdk.ui.bindings.commons.NavigationHandler;
-import org.hisp.dhis.client.sdk.ui.bindings.views.LoginActivity;
+import org.hisp.dhis.client.sdk.ui.bindings.views.DefaultLoginActivity;
 
 public final class App extends Application {
 
@@ -14,7 +14,7 @@ public final class App extends Application {
 
         Inject.init(this, App.class.getCanonicalName(), App.class.getCanonicalName());
 
-        NavigationHandler.loginActivity(LoginActivity.class);
+        NavigationHandler.loginActivity(DefaultLoginActivity.class);
         NavigationHandler.homeActivity(HomeActivity.class);
     }
 }
